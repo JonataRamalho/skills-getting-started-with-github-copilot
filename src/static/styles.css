@@ -90,12 +90,38 @@ section h3 {
 }
 
 .participants-list {
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   margin-bottom: 4px;
   color: #2b3152;
+}
+
+.participant-remove-button {
+  background: transparent;
+  color: #c62828;
+  border: 1px solid transparent;
+  padding: 4px 8px;
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 999px;
+}
+
+.participant-remove-button:hover {
+  background-color: rgba(198, 40, 40, 0.08);
+  color: #a61b1b;
+}
+
+.participant-remove-button:focus-visible {
+  outline: 2px solid #c62828;
+  outline-offset: 2px;
 }
 
 .participants-empty {
